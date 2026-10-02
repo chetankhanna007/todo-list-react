@@ -1,0 +1,63 @@
+.form-input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.btn-submit, .btn-delete{
+  display: inline-block;
+  width: auto;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin-left: 20px;
+}
+
+/* Hover state (when a user mouse-overs the button) */
+.btn-submit:hover, .btn-delete:hover{
+  background-color: #0056b3; /* Darker blue */
+}
+
+/* Active state (when the button is being clicked) */
+.btn-submit:active , .btn-delete:active{
+  transform: scale(0.98); /* Slight click shrinkage effect */
+}
+
+li{
+    width: 100%;
+    margin: 10px 0px;
+    margin-left: 200px;
+    text-align: left;
+    display:  flex;
+    justify-content: space-between;
+     position: relative;
+    padding-left: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+.listContainer{
+    display: flex;
+    justify-content: center;
+}
+
+li::before {
+  content: "•"; 
+  position: absolute;
+  left: 0;
+  font-size: 30px;
+  color: white; 
+}
